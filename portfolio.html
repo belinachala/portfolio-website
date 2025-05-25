@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belina Chala | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i> Belina<span>Chala</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html" class="active"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="skills.html"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><i class="fas fa-rocket"></i> My <span>Projects</span></h1>
+                <p class="subtitle">
+                    <i class="fas fa-code-branch"></i> A collection of my work showcasing problem-solving through code
+                </p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects -->
+    <section class="portfolio-projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        
+                        <img src="images/lamo.png" alt="E-Commerce Platform" class="profile-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online store with payment integration and inventory management.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-code"></i> 15,000+ LOC</span>
+                            <span><i class="fas fa-users"></i> 20k+ Users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/wandee.jpg" alt="Health Tracking App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Health Tracking App</h3>
+                        <p>Mobile application for tracking fitness metrics and health data with AI recommendations.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-code"></i> 10,000+ LOC</span>
+                            <span><i class="fas fa-download"></i> 10k+ Downloads</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/gameee.jpg" alt="API Gateway">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Microservices API Gateway</h3>
+                        <p>High-performance gateway handling 10k+ requests per second with authentication.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-bolt"></i> 200ms Response</span>
+                            <span><i class="fas fa-server"></i> 90.9% Uptime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web,opensource">
+                    <div class="project-image">
+                        <img src="images/dev.jpg" alt="Headless CMS">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech"> 
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Headless CMS</h3>
+                        <p>Open-source content management system with markdown support and versioning.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 50+ Stars</span>
+                            <span><i class="fas fa-code-branch"></i> 50+ Forks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/mesay.jpg" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>Data visualization platform processing millions of events daily.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-database"></i> 60k+ Events</span>
+                            <span><i class="fas fa-chart-line"></i> 30+ Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="mobile,opensource">
+                    <div class="project-image">
+                        <img src="images/waqo.jpg" alt="Education App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Language Learning App</h3>
+                        <p>Interactive mobile app for language education with speech recognition.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-language"></i> 5 Languages</span>
+                            <span><i class="fas fa-users"></i> 10k+ Students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-showcase">
+                <div class="showcase-header">
+                    <h2><i class="fas fa-medal"></i> Featured Case Study</h2>
+                    <p>An in-depth look at one of my most challenging projects</p>
+                </div>
+                <div class="showcase-content">
+                    <div class="showcase-image">
+                        <img src="images/lamo.png" alt="Project Showcase">
+                    </div>
+                    <div class="showcase-details">
+                        <h3>Enterprise Resource Planning System</h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 5 Month Project</span>
+                            <span><i class="fas fa-users"></i> Team of 5 Developers</span>
+                            <span><i class="fas fa-industry"></i> Manufacturing Sector</span>
+                        </div>
+                        <div class="challenges">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Challenges</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Legacy system with 10+ years of technical debt</li>
+                                <li><i class="fas fa-check-circle"></i> Needed to maintain 100% uptime during migration</li>
+                                <li><i class="fas fa-check-circle"></i> Complex inventory management requirements</li>
+                            </ul>
+                        </div>
+                        <div class="solutions">
+                            <h4><i class="fas fa-lightbulb"></i> Solutions</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Microservices architecture with Kubernetes</li>
+                                <li><i class="fas fa-check-circle"></i> Progressive migration strategy</li>
+                                <li><i class="fas fa-check-circle"></i> Custom reporting module with PDF generation</li>
+                            </ul>
+                        </div>
+                        <div class="outcomes">
+                            <h4><i class="fas fa-chart-line"></i> Outcomes</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 40% improvement in operational efficiency</li>
+                                <li><i class="fas fa-check-circle"></i> 99.9% system availability</li>
+                                <li><i class="fas fa-check-circle"></i> 30% reduction in inventory costs</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Read Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="portfolio-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-quote-left"></i> Client Feedback</h2>
+                <p>What people say about working with me</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Belina delivered our e-commerce platform ahead of schedule with exceptional quality. Her attention to detail and problem-solving skills are outstanding.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/mite.png" alt="Mitiku Begna">
+                        <div class="author-info">
+                            <h5>Mitiku Begna</h5>
+                            <span>CEO, TechSolutions Inc.</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>The health tracking app Belina developed has transformed our patient engagement metrics. Her technical expertise and UX focus were invaluable.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/wande.jpg" alt="Gemechu Belay">
+                        <div class="author-info">
+                            <h5>Dr. Gemechu Belay</h5>
+                            <span>CTO, HealthTech Solutions</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2><i class="fas fa-paper-plane"></i> Have a Project in Mind?</h2>
+                <p>I'm currently available for freelance work and full-time positions. Let's discuss how I can help bring your ideas to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                    <a href="skills.html" class="btn btn-secondary">
+                        <i class="fas fa-cogs"></i> View My Skills
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4><i class="fas fa-code"></i> Belina Chala</h4>
+                    <p>Software Developer specializing in creating efficient, scalable solutions with clean code and modern technologies.</p>
+                </div>
+                <div class="footer-links">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="skills.html" class="active"><i class="fas fa-cogs"></i> Skills</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4><i class="fas fa-share-alt"></i> Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/channel/UC2y1IGj-6NP-uqYZbR34biw"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/belinachala" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="far fa-copyright"></i> <span id="year"></span> Belina Chala. All rights reserved.</p>
+                <p><i class="fas fa-code"></i> Built with passion and clean code</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Project filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter projects
+                const filterValue = button.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Animation on scroll
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        // Mobile menu toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  
+  hamburger.addEventListener('click', function() {
+    // Toggle the 'active' class on both elements
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    
+    // Change the icon from bars to X when active
+    if (hamburger.classList.contains('active')) {
+      hamburger.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+      hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+  
+  // Close menu when a nav link is clicked (optional but recommended)
+  const navItems = document.querySelectorAll('.nav-links a');
+  navItems.forEach(item => {
+    item.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+      hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+});
+
+        // Initialize scroll reveal
+        reveal();
+    </script>
+</body>
+</html>

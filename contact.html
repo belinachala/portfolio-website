@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Belina Chala | Software Developer</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i> Belina<span>Chala</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="skills.html"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><i class="fas fa-paper-plane"></i> Let's <span>Work Together</span></h1>
+                <p class="subtitle">
+                    <i class="fas fa-comment-dots"></i> Have a project in mind or want to discuss opportunities? Reach out through any channel below.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope-open-text"></i> Contact Options</h2>
+                <p>Choose your preferred method to get in touch</p>
+            </div>
+            
+            <div class="options-grid">
+                <!-- Contact Form -->
+                <div class="contact-card form-card">
+                    <div class="card-header">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Send a Message</h3>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name <span>*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span>*</span></label>
+                            <input type="text" id="subject" name="subject" required placeholder="">
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="message">Your Message <span>*</span></label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment">Project Files (Optional)</label>
+                            <input type="file" id="attachment" name="attachment" class="file-input">
+                            <label for="attachment" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Choose files...</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your message has been sent successfully! I'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <!-- Alternative Contact Methods -->
+                <div class="contact-card methods-card">
+                    <div class="card-header">
+                        <i class="fas fa-address-book"></i>
+                        <h3>Other Ways to Connect</h3>
+                    </div>
+                    <div class="contact-methods">
+                        <!-- Email -->
+                        <div class="method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email Me</h4>
+                                <a href="mailto:oroafrilove@gmail.com">oroafrilove@gmail.com</a>
+                                <p>For formal inquiries and project proposals</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Calendly -->
+                        <div class="method">
+                            <div class="method-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Schedule a Call</h4>
+                                <a href="https://calendly.com/belinachala" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-video"></i> Book Consultation
+                                </a>
+                                <p>30-minute discovery call to discuss your project</p>
+                            </div>
+                        </div>
+                        
+                        <!-- WhatsApp -->
+                        <div class="method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>WhatsApp Chat</h4>
+                                <a href="https://wa.me/+251917331160" target="_blank" class="btn btn-outline">
+                                    <i class="fab fa-whatsapp"></i> Start Chat
+                                </a>
+                                <p>Quick questions or instant messaging</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div class="method">
+                            <div class="method-details">
+                                <h4>Social Media</h4>
+                                <div class="social-buttons">
+                                    <a href="https://www.youtube.com/channel/UC2y1IGj-6NP-uqYZbR34biw" target="_blank" class="social-btn youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a> 
+                                    <a href="https://web.facebook.com/badadaiyasu.adula"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://github.com/belinachala" target="_blank" class="social-btn github">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <p>Connect professionally or see my open-source work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <p>Quick answers to common inquiries</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of projects do you typically work on?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I specialize in full-stack web applications, API development, and progressive web apps. My typical projects range from SaaS platforms to e-commerce solutions and custom business automation tools. I'm particularly experienced with React, Node.js, and Python-based projects.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your typical response time for inquiries?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I strive to respond to all inquiries within 24 hours during weekdays. For urgent matters, please use the WhatsApp option or mark your email as urgent in the subject line.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you sign NDAs or work contracts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. I understand the importance of protecting your intellectual property. I'm happy to sign NDAs before project discussions and always work with clear contracts that outline project scope, deliverables, timelines, and payment terms.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your payment terms?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For most projects, I require a 30% deposit to begin work, with milestone payments throughout the project and the final balance upon completion. I accept payments via bank transfer, PayPal, Wise, and cryptocurrency for international clients.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer ongoing maintenance after project completion?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I offer several maintenance packages ranging from basic bug fixes to full-scale ongoing development and feature additions. We can discuss the best option for your needs during our initial consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4><i class="fas fa-code"></i> Belina Chala</h4>
+                    <p>Software Developer specializing in creating efficient, scalable solutions with clean code and modern technologies.</p>
+                </div>
+                <div class="footer-links">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="skills.html" class="active"><i class="fas fa-cogs"></i> Skills</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4><i class="fas fa-share-alt"></i> Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/channel/UC2y1IGj-6NP-uqYZbR34biw"><i class="fab fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/badadaiyasu.adula"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/badadaiyasu" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="far fa-copyright"></i> <span id="year"></span> Belina Chala. All rights reserved.</p>
+                <p><i class="fas fa-code"></i> Built with passion and clean code</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', function() {
+        // Toggle active class on both elements
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+});
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission (in a real implementation, you would use AJAX or similar)
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'block';
+            
+            // Reset form after 5 seconds
+            setTimeout(() => {
+                contactForm.reset();
+                contactForm.style.display = 'block';
+                formSuccess.style.display = 'none';
+            }, 5000);
+        });
+
+        // FAQ accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle the answer
+                answer.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Close other open answers
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.remove('active');
+                        otherQuestion.querySelector('i').classList.remove('fa-chevron-up');
+                        otherQuestion.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+        // File input styling
+        const fileInput = document.querySelector('.file-input');
+        const fileLabel = document.querySelector('.file-label span');
+        
+        fileInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                fileLabel.textContent = this.files[0].name;
+            } else {
+                fileLabel.textContent = 'Choose files...';
+            }
+        });
+
+        // Animation on scroll
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+
+        // Initialize scroll reveal
+        reveal();
+    </script>
+</body>
+</html>
